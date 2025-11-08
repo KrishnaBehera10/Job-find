@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+:root {
+  --background-color: #f4f4f6;
+  --btn-color: #156ff5;
+  --font-color: black;
+  --font-white: white;
+  --size: clamp(16px, 1.5vw, 80px);
+}

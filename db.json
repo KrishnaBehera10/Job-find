@@ -1,0 +1,40 @@
+{
+  "job": {
+    "id": 1,
+    "title": "Frontend Developer",
+    "company": "Google",
+    "location": "Bangalore",
+    "type": "Full Time",
+    "salary": "15 LPA",
+    "description": "Build beautiful UIs using React.",
+    "skills": [
+      "React",
+      "JavaScript",
+      "CSS"
+    ],
+    "applicants": [],
+    "createdBy": 1
+  },
+  "user": [
+    {
+      "id": "43c1e4f3-470f-4b65-8553-2624a6d4d7e8",
+      "firstname": "krishna",
+      "lastname": "behera",
+      "email": "krishna@gmail.com",
+      "password": "hyman901",
+      "role": "jobseeker",
+      "createdAt": "11/8/2025",
+      "appliedJobs": [],
+      "skills": [
+        "html",
+        "css",
+        "javascript",
+        "react",
+        "node",
+        "express",
+        "mongoose"
+      ],
+      "resume": "FigmaSetup.exe"
+    }
+  ]
+}
