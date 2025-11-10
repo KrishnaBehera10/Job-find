@@ -14,6 +14,7 @@
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.5",
     "@mui/material": "^7.3.5",
+    "@mui/x-charts": "^8.17.0",
     "@tailwindcss/vite": "^4.1.17",
     "axios": "^1.13.2",
     "json-server": "^1.0.0-beta.3",
@@ -23,6 +24,7 @@
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.9.5",
     "react-toastify": "^11.0.5",
+    "recharts": "^3.3.0",
     "tailwindcss": "^4.1.17"
   },
   "devDependencies": {

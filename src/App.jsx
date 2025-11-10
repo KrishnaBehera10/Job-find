@@ -20,8 +20,8 @@ function App() {
   return (
     <div className="w-full h-screen relative flex bg-zinc-800 p-3 gap-5">
       <Navbar />
-      <div className="w-full h-full relative overflow-hidden">
-        <div className="w-full h-full rounded-4xl bg-white p-5">
+      <div className="w-full h-full relative rounded-4xl overflow-auto">
+        <div className="w-full h-full rounded-4xl bg-white p-5 overflow-auto">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/job" element={<JobList />} />

@@ -1,7 +1,11 @@
-import React from "react";
+import Heading from "./Heading";
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div className="w-full h-full absolute top-0 left-0">
+      <Heading />
+    </div>
+  );
 }
 
 export default Home;

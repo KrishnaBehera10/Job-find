@@ -4,12 +4,13 @@ import { useState } from "react";
 import { BsMenuAppFill } from "react-icons/bs";
 import { BiLogoBehance } from "react-icons/bi";
 function Navbar() {
-  const { loginUser } = useglobaldata();
+  const { loginUser, setloginUser } = useglobaldata();
   const [open, setopen] = useState(true);
   const navigate = useNavigate();
 
   function logout() {
     localStorage.removeItem("login");
+    setloginUser([]);
     navigate("/login");
   }
 
@@ -19,21 +20,26 @@ function Navbar() {
         open ? "w-1/8" : "w-15"
       } h-full bg-zinc-800 text-white shadow-lg flex flex-col gap-5`}
     >
-      <div
-        className="flex w-full items-center justify-between"
-        onClick={() => setopen(!open)}
-      >
-        <header className="text-4xl w-full">{open && <BiLogoBehance />}</header>
-        <button className="text-4xl w-full flex justify-center">
-          <BsMenuAppFill />
+      <div className="flex w-full items-center">
+        <header className="text-4xl w-full">
+          {open && <BiLogoBehance onClick={() => navigate("/")} />}
+        </header>
+        <button className="text-4xl flex w-full justify-end cursor-pointer">
+          <BsMenuAppFill onClick={() => setopen(!open)} />
         </button>
       </div>
 
       {open && (
         <div className="flex flex-col gap-1">
           <NavLink to="/job">Job</NavLink>
-          <NavLink to="/jobsave">Saved</NavLink>
-          <NavLink to="/applied">Applied</NavLink>
+          {loginUser[0]?.role === "jobseeker" ? (
+            <div className="flex flex-col gap-1">
+              <NavLink to="/jobsave">Saved</NavLink>
+              <NavLink to="/applied">Applied</NavLink>
+            </div>
+          ) : (
+            <NavLink to="/dashboard">Dashboard</NavLink>
+          )}
         </div>
       )}
 
@@ -52,11 +58,9 @@ function Navbar() {
           </div>
         )
       ) : (
-        <div className="py-3">
-          {open && <NavLink to="/profile">Profile</NavLink>}
-        </div>
+        <div>{open && <NavLink to="/profile">Profile</NavLink>}</div>
       )}
-      {loginUser.length > 0 && (
+      {loginUser.length > 0 && open && (
         <div className="w-full h-full flex items-end">
           <button
             onClick={logout}
