@@ -1,4 +1,7 @@
 import { useForm } from "react-hook-form";
+import axios from "../../Axios/Axios";
+import { useglobaldata } from "../../Context/MainContext";
+import { toast } from "react-toastify";
 
 function PostJob() {
   const {
@@ -8,8 +11,20 @@ function PostJob() {
     formState: { errors },
   } = useForm();
 
+  const { loginUser } = useglobaldata();
+
   const onSubmit = async (data) => {
-    console.log(data);
+    data.applicants = [];
+    data.createdBy = loginUser[0];
+
+    try {
+      const response = await axios.post("/job", data);
+      toast.success(response.statusText);
+    } catch (error) {
+      console.error("Error posting job:", error);
+    }
+
+    reset();
   };
   return (
     <div>
@@ -96,6 +111,21 @@ function PostJob() {
           />
           {errors.skills && (
             <p className="text-red-500 text-sm">{errors.skills.message}</p>
+          )}
+        </div>
+
+        {/* about */}
+        <div className="col-span-2">
+          <textarea
+            placeholder="Company Aboute"
+            {...register("aboute", {
+              required: "Aboute is required",
+            })}
+            rows="4"
+            className="border border-gray-300 py-2 rounded-3xl w-full pl-3 h-24 resize-none"
+          ></textarea>
+          {errors.aboute && (
+            <p className="text-red-500 text-sm">{errors.aboute.message}</p>
           )}
         </div>
 

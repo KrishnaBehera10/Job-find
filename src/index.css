@@ -5,6 +5,7 @@
   --btn-color: #156ff5;
   --font-color: black;
   --font-white: white;
+  --bg-color: #f2f7ff;
   --size: clamp(16px, 1.5vw, 80px);
 }
 
@@ -15,4 +16,11 @@
 
 body {
   font-family: gilroy;
+}
+
+#job-card::-webkit-scrollbar {
+  display: none;
+}
+#job-details::-webkit-scrollbar {
+  display: none;
 }

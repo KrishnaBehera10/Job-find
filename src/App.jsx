@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import JobList from "./pages/JobList";
-import JobDetails from "./pages/JobDetails";
+import JobDetails from "./components/JobDetails";
 import JobSave from "./pages/JobSave";
 import JobApplied from "./pages/JobApplied";
 import Login from "./pages/Login";
@@ -13,26 +13,37 @@ import ProtectRoute from "./pages/ProtectRoute";
 import Dashboard from "./pages/Admin/Dashboard";
 import { useglobaldata } from "./Context/MainContext";
 import Pagenotfound from "./pages/Pagenotfound";
+import { useEffect } from "react";
+import axios from "./Axios/Axios";
 
 function App() {
-  const { loginUser, setloginUser } = useglobaldata();
+  const { loginUser, setjob } = useglobaldata();
+
+  useEffect(() => {
+    async function fetchjob() {
+      const response = await axios.get("/job");
+      setjob(response.data);
+    }
+    fetchjob();
+  }, []);
 
   return (
     <div className="w-full h-screen relative flex bg-zinc-800 p-3 gap-5">
       <Navbar />
-      <div className="w-full h-full relative rounded-4xl overflow-auto">
+      <div className="w-full h-full relative rounded-4xl overflow-auto z-50">
         <div className="w-full h-full rounded-4xl bg-white p-5 overflow-auto">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/job" element={<JobList />} />
-            <Route
-              path="/job/details/:id"
-              element={
-                <ProtectRoute>
-                  <JobDetails />
-                </ProtectRoute>
-              }
-            />
+            <Route path="/job" element={<JobList />}>
+              <Route
+                path="/job/details/:id"
+                element={
+                  <ProtectRoute>
+                    <JobDetails />
+                  </ProtectRoute>
+                }
+              />
+            </Route>
             <Route path="/jobsave" element={<JobSave />} />
             <Route path="/applied" element={<JobApplied />} />
             <Route

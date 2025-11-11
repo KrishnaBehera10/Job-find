@@ -1,20 +1,131 @@
 {
-  "job": {
-    "id": 1,
-    "title": "Frontend Developer",
-    "company": "Google",
-    "location": "Bangalore",
-    "type": "Full Time",
-    "salary": "15 LPA",
-    "description": "Build beautiful UIs using React.",
-    "skills": [
-      "React",
-      "JavaScript",
-      "CSS"
-    ],
-    "applicants": [],
-    "createdBy": 1
-  },
+  "job": [
+    {
+      "id": "1",
+      "title": "Frontend Developer",
+      "company": "Google",
+      "location": "Bangalore",
+      "type": "Full Time",
+      "salary": "15 LPA",
+      "description": "Build beautiful UIs using React.",
+      "skills": [
+        "React",
+        "JavaScript",
+        "CSS"
+      ],
+      "applicants": [],
+      "createdBy": 1
+    },
+    {
+      "id": "9092",
+      "title": "backend developer",
+      "company": "capgamini",
+      "location": "banglore",
+      "type": "Full Time",
+      "salary": "1 lakh monthly",
+      "skills": "node express mongoose ",
+      "description": "Responsibilities:\n\nDevelop responsive web interfaces using HTML, CSS, and JavaScript\nCreate interactive UI components using React.js + Tailwind CSS (or Vue.js, Angular)\nDesign user interfaces for multiple AI features and data visualization\nUtilize UI libraries like Bootstrap or Material UI for consistent styling\nImplement front-end form validation and user input handling\nEnsure cross-browser compatibility and responsive design for mobile devices\nConnect front-end components with RESTful APIs using Axios/Fetch\nCollaborate with back-end developers to integrate UI components with server-side logic\nOptimize web applications for maximum speed and scalability\nParticipate in code reviews and implement feedback from senior developers\n\n\nQualifications:\n\nStudent or Fresh Graduate. No experience required.\nSrong programming skills in HTML, CSS, and JavaScript\nBasic proficiency in React.js and Tailwind CSS\nUnderstanding of responsive design principles\nFamiliarity with API integration (Axios/Fetch)\nKnowledge of UI/UX best practices\nBasic understanding of browser rendering and performance\nAbility to work independently in a remote setting\n\n\nBenefits:\n\nOpportunity to build practical skills with modern front-end technologies\nEnhance your professional portfolio with real-world projects\nExposure to FinTech industry and AI applications\nRemote work flexibility",
+      "applicants": [],
+      "createdBy": {
+        "id": "d34efdb7-6d90-4201-a193-29fee6365284",
+        "firstname": "swati",
+        "lastname": "hr",
+        "email": "swati@gmmail.com",
+        "password": "hyman901",
+        "role": "recruiter",
+        "createdAt": "11/9/2025",
+        "appliedJobs": []
+      }
+    },
+    {
+      "id": "2425",
+      "title": "Frontend Developer",
+      "company": "Google",
+      "location": "gurgram",
+      "type": "Full Time",
+      "salary": "10 LPA",
+      "skills": "html css js react",
+      "aboute": "About the Company:\n\nZeTheta Algorithms Private Limited is a FinTech start-up which has been recently set up and is developing innovative AI tools.\nhttps://www.instagram.com/zetheta.official",
+      "description": "Responsibilities:\n\nDevelop responsive web interfaces using HTML, CSS, and JavaScript\nCreate interactive UI components using React.js + Tailwind CSS (or Vue.js, Angular)\nDesign user interfaces for multiple AI features and data visualization\nUtilize UI libraries like Bootstrap or Material UI for consistent styling\nImplement front-end form validation and user input handling\nEnsure cross-browser compatibility and responsive design for mobile devices\nConnect front-end components with RESTful APIs using Axios/Fetch\nCollaborate with back-end developers to integrate UI components with server-side logic\nOptimize web applications for maximum speed and scalability\nParticipate in code reviews and implement feedback from senior developers",
+      "applicants": [],
+      "createdBy": {
+        "id": "d34efdb7-6d90-4201-a193-29fee6365284",
+        "firstname": "swati",
+        "lastname": "hr",
+        "email": "swati@gmmail.com",
+        "password": "hyman901",
+        "role": "recruiter",
+        "createdAt": "11/9/2025",
+        "appliedJobs": []
+      }
+    },
+    {
+      "id": "b6b7",
+      "title": "UI/UX",
+      "company": "adobe",
+      "location": "hydrabad",
+      "type": "Full Time",
+      "salary": "50 monthly",
+      "skills": "figma",
+      "aboute": "About Us\n\nCommuniqate AI is building an AI-powered platform that helps companies assess, train, and improve workplace communication skills.\nWe’re a fast-growing startup at the intersection of AI, communication, and learning, on a mission to make every professional a better communicator.\nIf you’re excited by innovation, real-world impact, and building products used globally — we’d love to have you on board.\n",
+      "description": "Position: Front-End Developer Intern - Remote\nWork Mode: Remote\nInternship Duration: 4 Months (First 2 Months Unpaid + Next 2 Months Paid)\nStipend: 5K - 35K Per Month\nEligibility: College Students\nInternship Type: Performance-Based Continuation\nWorking Style: Collaborative / Online Team Workflow",
+      "applicants": [],
+      "createdBy": {
+        "id": "d34efdb7-6d90-4201-a193-29fee6365284",
+        "firstname": "swati",
+        "lastname": "hr",
+        "email": "swati@gmmail.com",
+        "password": "hyman901",
+        "role": "recruiter",
+        "createdAt": "11/9/2025",
+        "appliedJobs": []
+      }
+    },
+    {
+      "id": "cfa2",
+      "title": "react developer",
+      "company": "accunture",
+      "location": "noida",
+      "type": "Internship",
+      "salary": "20 monthly",
+      "skills": "frontend skill",
+      "aboute": "Job Title: React Developer Intern (Paid)\nCompany: WebBoost Solutions by UM\nLocation: Remote\nDuration: 3 months\nEmployment Opportunity: Potential full-time role based on performance, with a Certificate of Internship.\nAbout WebBoost Solutions by UM\n\nWebBoost Solutions by UM provides students and graduates with practical learning opportunities and career growth in web development through real-world projects and hands-on training.\nRole Overview\n\nAs a React Developer Intern, you will work on developing dynamic, responsive, and scalable web applications using React.js. This internship will help you strengthen your front-end development skills and gain real-world experience in building modern applications.",
+      "description": "Build and maintain responsive web applications using React / Next.js / TypeScript\nWork on Android app development (native or hybrid using React Native / Flutter)\nIntegrate APIs and third-party SDKs (analytics, authentication, payments, etc.) ***\nHandle JSON data and connect front-end interfaces with backend systems\nCollaborate with backend and AI teams to develop and improve product features\nUse tools like Cursor, Lovable, Git, and CI/CD to speed up development\nContribute to better user experience, performance, and basic testing\nBasic knowledge of iOS build or publishing workflows is a plus",
+      "applicants": [],
+      "createdBy": {
+        "id": "d34efdb7-6d90-4201-a193-29fee6365284",
+        "firstname": "swati",
+        "lastname": "hr",
+        "email": "swati@gmmail.com",
+        "password": "hyman901",
+        "role": "recruiter",
+        "createdAt": "11/9/2025",
+        "appliedJobs": []
+      }
+    },
+    {
+      "id": "6fd6",
+      "title": "react developer",
+      "company": "global ",
+      "location": "delhi",
+      "type": "Full Time",
+      "salary": "30 monthly",
+      "skills": "fontend skill",
+      "aboute": "Company Details\nSwiggy is India’s largest on-demand convenience platform, redefining the way people access food, groceries, and everyday essentials. Established in 2014, Swiggy operates across 500+ cities with a robust logistics network that ensures fast and reliable doorstep delivery. From restaurant meals to groceries via Instamart and hyperlocal pick-up and drop services through Genie, Swiggy has become an integral part of daily life for millions of Indians, combining technology, scale, and convenience in a seamless digital experience.\nJob Roles & Responsibilities\n- Develop and maintain backend services using Go for logistics and food delivery platforms.\n- Collaborate with cross-team peers to gather requirements and design scalable backend solutions.\n- Optimize code to enhance performance and ensure system reliability within logistics solutions.\n- Streamline backend operations to support immediate deployment in logistics and food tech sectors.\n- Implement quality assurance to uphold industry standards in backend services.\nIdeal candidate profile\n- Embrace analytics for innovation in logistics using Go\n- Cultivate sustainability in agri-tech solutions\n- Deliver rapid contributions; adapt swiftly to change\n- Forge collaborative solutions across global teams\n- Navigate complex challenges in fast-paced product environments",
+      "description": "Architect and design end-to-end solutions using React.js for frontend and Node.js for backend services.\nDefine and enforce coding standards, architectural guidelines, and best practices.\nCollaborate with cross-functional teams including product managers, designers, and DevOps engineers.\nLead code reviews, mentor developers, and ensure high-quality code delivery.\nOptimize application performance, scalability, and security.\nEvaluate and integrate AI-powered tools to enhance development workflows and product capabilities (e.g., GitHub Copilot, Claude, RoohCode, Vertex AI, Cursor).\nStay current with emerging technologies and trends in web development and AI.\n\n\nRequired Skills & Qualifications\nBachelor’s or Master’s degree in Computer Science, Engineering, or related field.\n10+ years of experience in software development with at least 3 years in an architectural role.\nExpertise in React.js, Redux, TypeScript, Node.js, Express.js, and RESTful APIs.\nStrong understanding of microservices architecture, containerization (Docker/Kubernetes), and cloud platforms (AWS, Azure, or GCP).\nExperience with CI/CD pipelines, unit testing, and performance tuning.\nFamiliarity with database technologies such as MongoDB, PostgreSQL, or MySQL.\n",
+      "applicants": [],
+      "createdBy": {
+        "id": "d34efdb7-6d90-4201-a193-29fee6365284",
+        "firstname": "swati",
+        "lastname": "hr",
+        "email": "swati@gmmail.com",
+        "password": "hyman901",
+        "role": "recruiter",
+        "createdAt": "11/9/2025",
+        "appliedJobs": []
+      }
+    }
+  ],
   "user": [
     {
       "id": "43c1e4f3-470f-4b65-8553-2624a6d4d7e8",

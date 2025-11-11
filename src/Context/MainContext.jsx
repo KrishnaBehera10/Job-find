@@ -7,11 +7,13 @@ function MainContext({ children }) {
     JSON.parse(localStorage.getItem("login")) || []
   ); // loginuser add
 
+  const [job, setjob] = useState(null);
+
   useEffect(() => {
     localStorage.setItem("login", JSON.stringify(loginUser));
   }, [loginUser]);
   return (
-    <globaldata.Provider value={{ loginUser, setloginUser }}>
+    <globaldata.Provider value={{ loginUser, setloginUser, job, setjob }}>
       {children}
     </globaldata.Provider>
   );
