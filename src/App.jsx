@@ -25,7 +25,7 @@ function App() {
       setjob(response.data);
     }
     fetchjob();
-  }, []);
+  }, [loginUser]);
 
   return (
     <div className="w-full h-screen relative flex bg-zinc-800 p-3 gap-5">

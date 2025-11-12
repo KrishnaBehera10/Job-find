@@ -28,7 +28,7 @@ function DetailsCard({
       {/* hiring */}
       <div className="border border-gray-200 mt-5 rounded-2xl p-3">
         <h1 className="text-2xl capitalize">meet hiring team</h1>
-        <div className="flex items-center justify-between mt-3 flex-wrap md:flex-nowrap gap-5">
+        <div className="flex items-center justify-between mt-3 flex-wrap gap-5">
           <div className="flex items-center gap-3">
             <div className="w-15 h-15 rounded-full bg-zinc-500"></div>
             <h1>
