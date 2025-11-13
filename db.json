@@ -1,22 +1,6 @@
 {
   "job": [
     {
-      "id": "1",
-      "title": "Frontend Developer",
-      "company": "Google",
-      "location": "Bangalore",
-      "type": "Full Time",
-      "salary": "15 LPA",
-      "description": "Build beautiful UIs using React.",
-      "skills": [
-        "React",
-        "JavaScript",
-        "CSS"
-      ],
-      "applicants": [],
-      "createdBy": 1
-    },
-    {
       "id": "9092",
       "title": "backend developer",
       "company": "capgamini",

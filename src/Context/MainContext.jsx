@@ -1,19 +1,26 @@
-import React, { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 export const globaldata = createContext(null);
 
 function MainContext({ children }) {
+  // login user add
   const [loginUser, setloginUser] = useState(
     JSON.parse(localStorage.getItem("login")) || []
-  ); // loginuser add
+  );
 
+  //job post data
   const [job, setjob] = useState(null);
+
+  //fiter job
+  const [jobfilter, setjobfilter] = useState([]);
 
   useEffect(() => {
     localStorage.setItem("login", JSON.stringify(loginUser));
   }, [loginUser]);
   return (
-    <globaldata.Provider value={{ loginUser, setloginUser, job, setjob }}>
+    <globaldata.Provider
+      value={{ loginUser, setloginUser, job, setjob, jobfilter, setjobfilter }}
+    >
       {children}
     </globaldata.Provider>
   );
