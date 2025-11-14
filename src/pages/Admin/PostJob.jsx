@@ -15,7 +15,7 @@ function PostJob() {
 
   const onSubmit = async (data) => {
     data.applicants = [];
-    data.createdBy = loginUser[0];
+    data.createdBy = loginUser;
 
     try {
       const response = await axios.post("/job", data);

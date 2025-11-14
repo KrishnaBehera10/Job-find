@@ -16,16 +16,16 @@ function Updatecard() {
     formState: { errors },
   } = useForm({
     defaultValues: {
-      email: loginUser[0]?.email,
-      password: loginUser[0]?.password,
+      email: loginUser.email,
+      password: loginUser.password,
     },
   });
 
   // Submit function
   const onSubmit = async (data) => {
     try {
-      const response = await axios.patch(`/user/${loginUser[0]?.id}`, data);
-      setloginUser([response.data]);
+      const response = await axios.patch(`/user/${loginUser.id}`, data);
+      setloginUser(response.data);
       toast.success(response.statusText, response.status);
     } catch (error) {
       console.log(error);
@@ -41,7 +41,7 @@ function Updatecard() {
       </button>
 
       <h1 className="text-[5vw] capitalize font-light pb-5">
-        {loginUser[0]?.firstname}
+        {loginUser.firstname}
       </h1>
 
       {/* Form */}

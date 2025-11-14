@@ -7,9 +7,11 @@
       "location": "banglore",
       "type": "Full Time",
       "salary": "1 lakh monthly",
-      "skills": "node express mongoose ",
+      "skills": "node express mongoose",
       "description": "Responsibilities:\n\nDevelop responsive web interfaces using HTML, CSS, and JavaScript\nCreate interactive UI components using React.js + Tailwind CSS (or Vue.js, Angular)\nDesign user interfaces for multiple AI features and data visualization\nUtilize UI libraries like Bootstrap or Material UI for consistent styling\nImplement front-end form validation and user input handling\nEnsure cross-browser compatibility and responsive design for mobile devices\nConnect front-end components with RESTful APIs using Axios/Fetch\nCollaborate with back-end developers to integrate UI components with server-side logic\nOptimize web applications for maximum speed and scalability\nParticipate in code reviews and implement feedback from senior developers\n\n\nQualifications:\n\nStudent or Fresh Graduate. No experience required.\nSrong programming skills in HTML, CSS, and JavaScript\nBasic proficiency in React.js and Tailwind CSS\nUnderstanding of responsive design principles\nFamiliarity with API integration (Axios/Fetch)\nKnowledge of UI/UX best practices\nBasic understanding of browser rendering and performance\nAbility to work independently in a remote setting\n\n\nBenefits:\n\nOpportunity to build practical skills with modern front-end technologies\nEnhance your professional portfolio with real-world projects\nExposure to FinTech industry and AI applications\nRemote work flexibility",
-      "applicants": [],
+      "applicants": [
+        "43c1e4f3-470f-4b65-8553-2624a6d4d7e8"
+      ],
       "createdBy": {
         "id": "d34efdb7-6d90-4201-a193-29fee6365284",
         "firstname": "swati",
@@ -31,7 +33,9 @@
       "skills": "html css js react",
       "aboute": "About the Company:\n\nZeTheta Algorithms Private Limited is a FinTech start-up which has been recently set up and is developing innovative AI tools.\nhttps://www.instagram.com/zetheta.official",
       "description": "Responsibilities:\n\nDevelop responsive web interfaces using HTML, CSS, and JavaScript\nCreate interactive UI components using React.js + Tailwind CSS (or Vue.js, Angular)\nDesign user interfaces for multiple AI features and data visualization\nUtilize UI libraries like Bootstrap or Material UI for consistent styling\nImplement front-end form validation and user input handling\nEnsure cross-browser compatibility and responsive design for mobile devices\nConnect front-end components with RESTful APIs using Axios/Fetch\nCollaborate with back-end developers to integrate UI components with server-side logic\nOptimize web applications for maximum speed and scalability\nParticipate in code reviews and implement feedback from senior developers",
-      "applicants": [],
+      "applicants": [
+        "43c1e4f3-470f-4b65-8553-2624a6d4d7e8"
+      ],
       "createdBy": {
         "id": "d34efdb7-6d90-4201-a193-29fee6365284",
         "firstname": "swati",
@@ -53,7 +57,9 @@
       "skills": "figma",
       "aboute": "About Us\n\nCommuniqate AI is building an AI-powered platform that helps companies assess, train, and improve workplace communication skills.\nWe’re a fast-growing startup at the intersection of AI, communication, and learning, on a mission to make every professional a better communicator.\nIf you’re excited by innovation, real-world impact, and building products used globally — we’d love to have you on board.\n",
       "description": "Position: Front-End Developer Intern - Remote\nWork Mode: Remote\nInternship Duration: 4 Months (First 2 Months Unpaid + Next 2 Months Paid)\nStipend: 5K - 35K Per Month\nEligibility: College Students\nInternship Type: Performance-Based Continuation\nWorking Style: Collaborative / Online Team Workflow",
-      "applicants": [],
+      "applicants": [
+        "43c1e4f3-470f-4b65-8553-2624a6d4d7e8"
+      ],
       "createdBy": {
         "id": "d34efdb7-6d90-4201-a193-29fee6365284",
         "firstname": "swati",
@@ -75,7 +81,9 @@
       "skills": "frontend skill",
       "aboute": "Job Title: React Developer Intern (Paid)\nCompany: WebBoost Solutions by UM\nLocation: Remote\nDuration: 3 months\nEmployment Opportunity: Potential full-time role based on performance, with a Certificate of Internship.\nAbout WebBoost Solutions by UM\n\nWebBoost Solutions by UM provides students and graduates with practical learning opportunities and career growth in web development through real-world projects and hands-on training.\nRole Overview\n\nAs a React Developer Intern, you will work on developing dynamic, responsive, and scalable web applications using React.js. This internship will help you strengthen your front-end development skills and gain real-world experience in building modern applications.",
       "description": "Build and maintain responsive web applications using React / Next.js / TypeScript\nWork on Android app development (native or hybrid using React Native / Flutter)\nIntegrate APIs and third-party SDKs (analytics, authentication, payments, etc.) ***\nHandle JSON data and connect front-end interfaces with backend systems\nCollaborate with backend and AI teams to develop and improve product features\nUse tools like Cursor, Lovable, Git, and CI/CD to speed up development\nContribute to better user experience, performance, and basic testing\nBasic knowledge of iOS build or publishing workflows is a plus",
-      "applicants": [],
+      "applicants": [
+        "43c1e4f3-470f-4b65-8553-2624a6d4d7e8"
+      ],
       "createdBy": {
         "id": "d34efdb7-6d90-4201-a193-29fee6365284",
         "firstname": "swati",
@@ -119,17 +127,40 @@
       "password": "hyman901",
       "role": "jobseeker",
       "createdAt": "11/8/2025",
-      "appliedJobs": [],
-      "skills": [
-        "html",
-        "css",
-        "javascript",
-        "react",
-        "node",
-        "express",
-        "mongoose"
+      "appliedJobs": [
+        {
+          "title": "Frontend Developer",
+          "description": "Responsibilities:\n\nDevelop responsive web interfaces using HTML, CSS, and JavaScript\nCreate interactive UI components using React.js + Tailwind CSS (or Vue.js, Angular)\nDesign user interfaces for multiple AI features and data visualization\nUtilize UI libraries like Bootstrap or Material UI for consistent styling\nImplement front-end form validation and user input handling\nEnsure cross-browser compatibility and responsive design for mobile devices\nConnect front-end components with RESTful APIs using Axios/Fetch\nCollaborate with back-end developers to integrate UI components with server-side logic\nOptimize web applications for maximum speed and scalability\nParticipate in code reviews and implement feedback from senior developers",
+          "id": "2425",
+          "company": "Google",
+          "type": "Full Time",
+          "salary": "10 LPA",
+          "applicants": []
+        },
+        {
+          "title": "UI/UX",
+          "description": "Position: Front-End Developer Intern - Remote\nWork Mode: Remote\nInternship Duration: 4 Months (First 2 Months Unpaid + Next 2 Months Paid)\nStipend: 5K - 35K Per Month\nEligibility: College Students\nInternship Type: Performance-Based Continuation\nWorking Style: Collaborative / Online Team Workflow",
+          "id": "b6b7",
+          "company": "adobe",
+          "type": "Full Time",
+          "salary": "50 monthly",
+          "applicants": []
+        },
+        {
+          "title": "react developer",
+          "description": "Build and maintain responsive web applications using React / Next.js / TypeScript\nWork on Android app development (native or hybrid using React Native / Flutter)\nIntegrate APIs and third-party SDKs (analytics, authentication, payments, etc.) ***\nHandle JSON data and connect front-end interfaces with backend systems\nCollaborate with backend and AI teams to develop and improve product features\nUse tools like Cursor, Lovable, Git, and CI/CD to speed up development\nContribute to better user experience, performance, and basic testing\nBasic knowledge of iOS build or publishing workflows is a plus",
+          "id": "cfa2",
+          "company": "accunture",
+          "type": "Internship",
+          "salary": "20 monthly",
+          "applicants": [],
+          "aboute": "Job Title: React Developer Intern (Paid)\nCompany: WebBoost Solutions by UM\nLocation: Remote\nDuration: 3 months\nEmployment Opportunity: Potential full-time role based on performance, with a Certificate of Internship.\nAbout WebBoost Solutions by UM\n\nWebBoost Solutions by UM provides students and graduates with practical learning opportunities and career growth in web development through real-world projects and hands-on training.\nRole Overview\n\nAs a React Developer Intern, you will work on developing dynamic, responsive, and scalable web applications using React.js. This internship will help you strengthen your front-end development skills and gain real-world experience in building modern applications."
+        }
       ],
-      "resume": "FigmaSetup.exe"
+      "skills": [
+        "react"
+      ],
+      "resume": "claudio-schwarz-5c0U4CY_lwA-unsplash.jpg"
     },
     {
       "id": "d34efdb7-6d90-4201-a193-29fee6365284",
@@ -140,6 +171,33 @@
       "role": "recruiter",
       "createdAt": "11/9/2025",
       "appliedJobs": []
+    },
+    {
+      "id": "b1c1cbef-8fdf-41b0-8239-9d080ce94193",
+      "firstname": "shiya",
+      "lastname": "hm",
+      "email": "shiya@gmail.com",
+      "password": "hyman901",
+      "role": "recruiter",
+      "createdAt": "11/13/2025",
+      "appliedJobs": []
+    },
+    {
+      "id": "1b9d0c71-2d28-4ab5-90bb-25d5f085786c",
+      "firstname": "harsh",
+      "lastname": "sharma",
+      "email": "harsh@gmail.com",
+      "password": "hyman901",
+      "role": "jobseeker",
+      "createdAt": "11/13/2025",
+      "appliedJobs": [],
+      "skills": [
+        "html",
+        "css",
+        "js",
+        "react"
+      ],
+      "resume": "FigmaSetup.exe"
     }
   ]
 }

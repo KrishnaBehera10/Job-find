@@ -10,7 +10,7 @@ function Navbar() {
 
   function logout() {
     localStorage.removeItem("login");
-    setloginUser([]);
+    setloginUser({});
     navigate("/login");
   }
 
@@ -32,7 +32,7 @@ function Navbar() {
       {open && (
         <div className="flex flex-col gap-1">
           <NavLink to="/job">Job</NavLink>
-          {loginUser[0]?.role === "jobseeker" ? (
+          {loginUser.role === "jobseeker" ? (
             <div className="flex flex-col gap-1">
               <NavLink to="/jobsave">Saved</NavLink>
               <NavLink to="/applied">Applied</NavLink>
@@ -43,7 +43,7 @@ function Navbar() {
         </div>
       )}
 
-      {loginUser.length <= 0 ? (
+      {Object.keys(loginUser).length <= 0 ? (
         open && (
           <div className="flex flex-col">
             <NavLink to="/login" className="py-3">
@@ -60,7 +60,7 @@ function Navbar() {
       ) : (
         <div>{open && <NavLink to="/profile">Profile</NavLink>}</div>
       )}
-      {loginUser.length > 0 && open && (
+      {Object.keys(loginUser).length > 0 && open && (
         <div className="w-full h-full flex items-end">
           <button
             onClick={logout}

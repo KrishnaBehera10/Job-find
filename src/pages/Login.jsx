@@ -29,7 +29,7 @@ function Login() {
       } else {
         navigate("/profile");
       }
-      setloginUser(response.data);
+      setloginUser(response.data[0]);
     } catch (error) {
       console.log(error);
     }

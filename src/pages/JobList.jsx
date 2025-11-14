@@ -22,7 +22,7 @@ function JobList() {
 
   return (
     <div className="w-full h-full flex gap-2 overflow-auto flex-wrap">
-      <FilterJob {...{ isDetailsPage, isMobile }} />
+      {!isMobile && <FilterJob {...{ isDetailsPage, isMobile }} />}
       <Jobcard {...{ isDetailsPage, isMobile }} />
       <Outlet />
     </div>

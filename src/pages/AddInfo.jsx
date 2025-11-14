@@ -31,15 +31,14 @@ function AddInfo() {
     if (!files) return;
     if (items.length <= 0) return;
 
-    const { id } = loginUser[0];
+    const { id } = loginUser;
 
     try {
       const response = await axios.patch(`/user/${id}`, {
         skills: items,
         resume: files,
       });
-
-      setloginUser([response.data]);
+      setloginUser(response.data);
       toast.success(response.statusText);
     } catch (error) {
       console.log(error);

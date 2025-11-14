@@ -20,11 +20,13 @@ function App() {
   const { loginUser, setjob } = useglobaldata();
 
   useEffect(() => {
-    async function fetchjob() {
-      const response = await axios.get("/job");
-      setjob(response.data);
+    if (Object.keys(loginUser).length > 0) {
+      async function fetchjob() {
+        const response = await axios.get("/job");
+        setjob(response.data);
+      }
+      fetchjob();
     }
-    fetchjob();
   }, [loginUser]);
 
   return (

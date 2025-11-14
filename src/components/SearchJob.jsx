@@ -9,9 +9,8 @@ function SearchJob() {
 
   useEffect(() => {
     let filterJob = job?.filter((data) => {
-      return data.title.toLowerCase().startsWith(searchJob.toLowerCase());
+      return data.title?.toLowerCase().startsWith(searchJob?.toLowerCase());
     });
-
     setjobfilter(filterJob);
   }, [job, searchJob]);
 
@@ -29,12 +28,6 @@ function SearchJob() {
             onChange={(e) => setsearchJob(e.target.value)}
           />
         </div>
-        <button
-          type="submit"
-          className="bg-[var(--bg-color)] text-[var(--btn-color)] capitalize p-3 cursor-pointer rounded-2xl"
-        >
-          search
-        </button>
       </div>
     </div>
   );

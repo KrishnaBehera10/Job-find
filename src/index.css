@@ -24,3 +24,6 @@ body {
 #job-details::-webkit-scrollbar {
   display: none;
 }
+#chat::-webkit-scrollbar {
+  display: none;
+}
