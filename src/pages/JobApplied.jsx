@@ -20,8 +20,6 @@ function JobApplied() {
       const response = await axios.patch(`/user/${userid}`, {
         appliedJobs: update,
       });
-
-      console.log(response.data);
       setloginUser(response.data);
     } catch (error) {
       console.log(error);

@@ -81,7 +81,9 @@
       "skills": "frontend skill",
       "aboute": "Job Title: React Developer Intern (Paid)\nCompany: WebBoost Solutions by UM\nLocation: Remote\nDuration: 3 months\nEmployment Opportunity: Potential full-time role based on performance, with a Certificate of Internship.\nAbout WebBoost Solutions by UM\n\nWebBoost Solutions by UM provides students and graduates with practical learning opportunities and career growth in web development through real-world projects and hands-on training.\nRole Overview\n\nAs a React Developer Intern, you will work on developing dynamic, responsive, and scalable web applications using React.js. This internship will help you strengthen your front-end development skills and gain real-world experience in building modern applications.",
       "description": "Build and maintain responsive web applications using React / Next.js / TypeScript\nWork on Android app development (native or hybrid using React Native / Flutter)\nIntegrate APIs and third-party SDKs (analytics, authentication, payments, etc.) ***\nHandle JSON data and connect front-end interfaces with backend systems\nCollaborate with backend and AI teams to develop and improve product features\nUse tools like Cursor, Lovable, Git, and CI/CD to speed up development\nContribute to better user experience, performance, and basic testing\nBasic knowledge of iOS build or publishing workflows is a plus",
-      "applicants": [],
+      "applicants": [
+        "43c1e4f3-470f-4b65-8553-2624a6d4d7e8"
+      ],
       "createdBy": {
         "id": "d34efdb7-6d90-4201-a193-29fee6365284",
         "firstname": "swati",
@@ -149,7 +151,18 @@
       "password": "hyman901",
       "role": "jobseeker",
       "createdAt": "11/8/2025",
-      "appliedJobs": [],
+      "appliedJobs": [
+        {
+          "title": "react developer",
+          "description": "Build and maintain responsive web applications using React / Next.js / TypeScript\nWork on Android app development (native or hybrid using React Native / Flutter)\nIntegrate APIs and third-party SDKs (analytics, authentication, payments, etc.) ***\nHandle JSON data and connect front-end interfaces with backend systems\nCollaborate with backend and AI teams to develop and improve product features\nUse tools like Cursor, Lovable, Git, and CI/CD to speed up development\nContribute to better user experience, performance, and basic testing\nBasic knowledge of iOS build or publishing workflows is a plus",
+          "id": "cfa2",
+          "company": "accunture",
+          "type": "Internship",
+          "salary": "20 monthly",
+          "applicants": [],
+          "aboute": "Job Title: React Developer Intern (Paid)\nCompany: WebBoost Solutions by UM\nLocation: Remote\nDuration: 3 months\nEmployment Opportunity: Potential full-time role based on performance, with a Certificate of Internship.\nAbout WebBoost Solutions by UM\n\nWebBoost Solutions by UM provides students and graduates with practical learning opportunities and career growth in web development through real-world projects and hands-on training.\nRole Overview\n\nAs a React Developer Intern, you will work on developing dynamic, responsive, and scalable web applications using React.js. This internship will help you strengthen your front-end development skills and gain real-world experience in building modern applications."
+        }
+      ],
       "skills": [
         "react"
       ],
