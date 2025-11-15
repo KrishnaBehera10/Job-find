@@ -12,7 +12,7 @@ function Dashboard() {
         <Appliedcard />
         <Hired />
       </div>
-      <PostJWob />
+      <PostJob />
     </div>
   );
 }

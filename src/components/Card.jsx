@@ -14,7 +14,7 @@ function Card({
   aboute,
 }) {
   const navigate = useNavigate();
-  const { loginUser, setloginUser, savejob, setsavejob } = useglobaldata();
+  const { loginUser, setloginUser, setsavejob } = useglobaldata();
   const userId = loginUser.id;
 
   function handleclick(id) {
@@ -22,17 +22,17 @@ function Card({
   }
 
   async function appliedJob(obj) {
+    //applicants
+
     try {
-      // check if already applied
       if (obj.applicants.includes(userId)) {
         alert("You have already applied to this job!");
         return;
       }
 
-      // add this userId to applicants array
       const updatedApplicants = [...obj.applicants, userId];
 
-      await axios.patch(`/job/${obj.id}`, {
+      const response = await axios.patch(`/job/${obj.id}`, {
         applicants: updatedApplicants,
       });
     } catch (error) {
@@ -40,8 +40,6 @@ function Card({
     }
 
     //applied Job
-
-    console.log(obj);
 
     try {
       const updateAppliedJob = [...loginUser.appliedJobs, obj];

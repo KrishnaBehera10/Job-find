@@ -46,8 +46,14 @@ function App() {
                 }
               />
             </Route>
-            <Route path="/jobsave" element={<JobSave />} />
-            <Route path="/applied" element={<JobApplied />} />
+
+            {loginUser.role === "jobseeker" && (
+              <>
+                <Route path="/jobsave" element={<JobSave />} />
+                <Route path="/applied" element={<JobApplied />} />
+              </>
+            )}
+
             <Route
               path="/profile"
               element={
@@ -59,7 +65,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/singup" element={<Signup />} />
 
-            {loginUser[0]?.role === "recruiter" && (
+            {loginUser.role === "recruiter" && (
               <Route path="/dashboard" element={<Dashboard />} />
             )}
 

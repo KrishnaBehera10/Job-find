@@ -81,9 +81,7 @@
       "skills": "frontend skill",
       "aboute": "Job Title: React Developer Intern (Paid)\nCompany: WebBoost Solutions by UM\nLocation: Remote\nDuration: 3 months\nEmployment Opportunity: Potential full-time role based on performance, with a Certificate of Internship.\nAbout WebBoost Solutions by UM\n\nWebBoost Solutions by UM provides students and graduates with practical learning opportunities and career growth in web development through real-world projects and hands-on training.\nRole Overview\n\nAs a React Developer Intern, you will work on developing dynamic, responsive, and scalable web applications using React.js. This internship will help you strengthen your front-end development skills and gain real-world experience in building modern applications.",
       "description": "Build and maintain responsive web applications using React / Next.js / TypeScript\nWork on Android app development (native or hybrid using React Native / Flutter)\nIntegrate APIs and third-party SDKs (analytics, authentication, payments, etc.) ***\nHandle JSON data and connect front-end interfaces with backend systems\nCollaborate with backend and AI teams to develop and improve product features\nUse tools like Cursor, Lovable, Git, and CI/CD to speed up development\nContribute to better user experience, performance, and basic testing\nBasic knowledge of iOS build or publishing workflows is a plus",
-      "applicants": [
-        "43c1e4f3-470f-4b65-8553-2624a6d4d7e8"
-      ],
+      "applicants": [],
       "createdBy": {
         "id": "d34efdb7-6d90-4201-a193-29fee6365284",
         "firstname": "swati",
@@ -116,6 +114,30 @@
         "createdAt": "11/9/2025",
         "appliedJobs": []
       }
+    },
+    {
+      "id": "163c",
+      "title": "Intern React JS developer",
+      "company": "intel",
+      "location": "pune",
+      "type": "Full Time",
+      "salary": "1 lakh",
+      "skills": "react",
+      "aboute": "Cloudevolve is a cloud optimization company dedicated to helping organizations reduce cloud costs and maximize efficiency. Using its intelligent FinOps and Cloud Optimization Platform, Cloudevolve provides startups, enterprises, and partners with real-time visibility, AI-powered cost-saving solutions, and continuous automation for AWS, Azure, and GCP platforms. Trusted by over 100 customers globally, Cloudevolve has optimized more than $1 billion in cloud spending, delivering measurable ROI with secure, AWS-approved solutions. Our mission is to simplify cloud efficiency so businesses can scale effectively and confidently.",
+      "description": "This is a full-time, on-site role located in Hyderabad for an IT Support Executive. The IT Support Executive will be responsible for providing technical support to resolve IT-related issues, troubleshooting hardware and software problems, managing network systems, and overseeing IT operations. Day-to-day responsibilities include addressing technical queries, maintaining system functionality, and ensuring smooth IT operations within the organization. Collaboration with team members to enhance IT infrastructure efficiency will also be essential to this role.\n\n Qualifications\n \nStrong proficiency in Troubleshooting and Technical Support for hardware and software systems.\nKnowledge of Network Administration, including managing and maintaining network infrastructure.\nExperience in Information Technology and IT Operations, ensuring seamless system functionality.\nAbility to work collaboratively and manage technical tasks effectively in a fast-paced environment.\nRelevant certifications in IT administration or related areas are an advantage.\nBachelor’s degree in Information Technology, Computer Science, or a related field is preferred.",
+      "applicants": [
+        "43c1e4f3-470f-4b65-8553-2624a6d4d7e8"
+      ],
+      "createdBy": {
+        "id": "b1c1cbef-8fdf-41b0-8239-9d080ce94193",
+        "firstname": "shiya",
+        "lastname": "hm",
+        "email": "shiya@gmail.com",
+        "password": "hyman901",
+        "role": "recruiter",
+        "createdAt": "11/13/2025",
+        "appliedJobs": []
+      }
     }
   ],
   "user": [
@@ -127,36 +149,7 @@
       "password": "hyman901",
       "role": "jobseeker",
       "createdAt": "11/8/2025",
-      "appliedJobs": [
-        {
-          "title": "Frontend Developer",
-          "description": "Responsibilities:\n\nDevelop responsive web interfaces using HTML, CSS, and JavaScript\nCreate interactive UI components using React.js + Tailwind CSS (or Vue.js, Angular)\nDesign user interfaces for multiple AI features and data visualization\nUtilize UI libraries like Bootstrap or Material UI for consistent styling\nImplement front-end form validation and user input handling\nEnsure cross-browser compatibility and responsive design for mobile devices\nConnect front-end components with RESTful APIs using Axios/Fetch\nCollaborate with back-end developers to integrate UI components with server-side logic\nOptimize web applications for maximum speed and scalability\nParticipate in code reviews and implement feedback from senior developers",
-          "id": "2425",
-          "company": "Google",
-          "type": "Full Time",
-          "salary": "10 LPA",
-          "applicants": []
-        },
-        {
-          "title": "UI/UX",
-          "description": "Position: Front-End Developer Intern - Remote\nWork Mode: Remote\nInternship Duration: 4 Months (First 2 Months Unpaid + Next 2 Months Paid)\nStipend: 5K - 35K Per Month\nEligibility: College Students\nInternship Type: Performance-Based Continuation\nWorking Style: Collaborative / Online Team Workflow",
-          "id": "b6b7",
-          "company": "adobe",
-          "type": "Full Time",
-          "salary": "50 monthly",
-          "applicants": []
-        },
-        {
-          "title": "react developer",
-          "description": "Build and maintain responsive web applications using React / Next.js / TypeScript\nWork on Android app development (native or hybrid using React Native / Flutter)\nIntegrate APIs and third-party SDKs (analytics, authentication, payments, etc.) ***\nHandle JSON data and connect front-end interfaces with backend systems\nCollaborate with backend and AI teams to develop and improve product features\nUse tools like Cursor, Lovable, Git, and CI/CD to speed up development\nContribute to better user experience, performance, and basic testing\nBasic knowledge of iOS build or publishing workflows is a plus",
-          "id": "cfa2",
-          "company": "accunture",
-          "type": "Internship",
-          "salary": "20 monthly",
-          "applicants": [],
-          "aboute": "Job Title: React Developer Intern (Paid)\nCompany: WebBoost Solutions by UM\nLocation: Remote\nDuration: 3 months\nEmployment Opportunity: Potential full-time role based on performance, with a Certificate of Internship.\nAbout WebBoost Solutions by UM\n\nWebBoost Solutions by UM provides students and graduates with practical learning opportunities and career growth in web development through real-world projects and hands-on training.\nRole Overview\n\nAs a React Developer Intern, you will work on developing dynamic, responsive, and scalable web applications using React.js. This internship will help you strengthen your front-end development skills and gain real-world experience in building modern applications."
-        }
-      ],
+      "appliedJobs": [],
       "skills": [
         "react"
       ],

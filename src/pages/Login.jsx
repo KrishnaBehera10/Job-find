@@ -3,11 +3,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import axios from "../Axios/Axios";
 import { useglobaldata } from "../Context/MainContext";
-import { useEffect } from "react";
 
 function Login() {
   const navigate = useNavigate();
-  const { loginUser, setloginUser } = useglobaldata();
+  const { setloginUser } = useglobaldata();
 
   // Initialize useForm
   const {

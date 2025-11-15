@@ -25,7 +25,7 @@ function MainContext({ children }) {
   useEffect(() => {
     localStorage.setItem("login", JSON.stringify(loginUser));
     localStorage.setItem("savejob", JSON.stringify(savejob));
-  }, [loginUser, savejob]);
+  }, [loginUser, savejob, Applied]);
   return (
     <globaldata.Provider
       value={{

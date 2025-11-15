@@ -3,20 +3,31 @@ import axios from "../Axios/Axios";
 import { useglobaldata } from "../Context/MainContext";
 
 function JobApplied() {
-  const { loginUser, Applied, setApplied } = useglobaldata();
+  const { loginUser, setloginUser, Applied, setApplied } = useglobaldata();
   const userid = loginUser.id;
-  useEffect(() => {
-    async function AppliedJob() {
-      try {
-        const response = await axios.get(`/user/${userid}`);
-        setApplied(response.data.appliedJobs);
-      } catch (error) {
-        console.log(error);
-      }
-    }
 
-    AppliedJob();
+  useEffect(() => {
+    const applied = loginUser.appliedJobs;
+    setApplied(applied);
   }, [loginUser]);
+
+  async function cancleapplied(jobid) {
+    const appliedjob = loginUser.appliedJobs;
+
+    const update = appliedjob.filter((data) => data.id !== jobid);
+
+    try {
+      const response = await axios.patch(`/user/${userid}`, {
+        appliedJobs: update,
+      });
+
+      console.log(response.data);
+      setloginUser(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <div className="w-full h-full">
       <h1 className="text-3xl capitalize mt-3">Applied Job</h1>
@@ -33,7 +44,10 @@ function JobApplied() {
                   <p className="text-sm">{data.company}</p>
                 </div>
                 <div>
-                  <button className="capitalize bg-[var(--btn-color)] text-white py-2 px-5 rounded cursor-pointer">
+                  <button
+                    onClick={() => cancleapplied(data.id)}
+                    className="capitalize bg-[var(--btn-color)] text-white py-2 px-5 rounded cursor-pointer"
+                  >
                     applied cancle
                   </button>
                 </div>
