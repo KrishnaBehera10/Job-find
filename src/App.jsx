@@ -17,7 +17,7 @@ import { useEffect } from "react";
 import axios from "./Axios/Axios";
 
 function App() {
-  const { loginUser, setjob } = useglobaldata();
+  const { loginUser, setjob, savejob, Applied } = useglobaldata();
 
   useEffect(() => {
     if (Object.keys(loginUser).length > 0) {

@@ -12,6 +12,7 @@ function Card({
   salary,
   applicants,
   aboute,
+  createdBy,
 }) {
   const navigate = useNavigate();
   const { loginUser, setloginUser, setsavejob } = useglobaldata();
@@ -23,24 +24,23 @@ function Card({
 
   async function appliedJob(obj) {
     //applicants
-
     try {
       if (obj.applicants.includes(userId)) {
         alert("You have already applied to this job!");
         return;
       }
-
       const updatedApplicants = [...obj.applicants, userId];
-
       const response = await axios.patch(`/job/${obj.id}`, {
         applicants: updatedApplicants,
       });
+      applied(response.data);
     } catch (error) {
       console.error("❌ Error applying job:", error);
     }
+  }
 
+  async function applied(obj) {
     //applied Job
-
     try {
       const updateAppliedJob = [...loginUser.appliedJobs, obj];
       const response = await axios.patch(`/user/${userId}`, {
@@ -57,10 +57,10 @@ function Card({
       const exists = prev.some((item) => item.id === obj.id);
 
       if (exists) {
-        return prev.filter((item) => item.id !== obj.id); // remove
+        return prev.filter((item) => item.id !== obj.id);
       }
 
-      return [...prev, obj]; // add
+      return [...prev, obj];
     });
   }
 
@@ -82,6 +82,7 @@ function Card({
               salary,
               applicants,
               aboute,
+              createdBy,
             })
           }
         >
@@ -106,6 +107,7 @@ function Card({
               salary,
               applicants,
               aboute,
+              createdBy,
             })
           }
           className="bg-[var(--btn-color)] text-white p-2 rounded cursor-pointer capitalize"

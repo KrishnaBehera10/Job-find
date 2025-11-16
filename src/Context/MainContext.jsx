@@ -18,14 +18,11 @@ function MainContext({ children }) {
   const [Applied, setApplied] = useState([]);
 
   //save job
-  const [savejob, setsavejob] = useState(
-    JSON.parse(localStorage.getItem("savejob")) || []
-  );
+  const [savejob, setsavejob] = useState([]);
 
   useEffect(() => {
     localStorage.setItem("login", JSON.stringify(loginUser));
-    localStorage.setItem("savejob", JSON.stringify(savejob));
-  }, [loginUser, savejob, Applied]);
+  }, [loginUser]);
   return (
     <globaldata.Provider
       value={{

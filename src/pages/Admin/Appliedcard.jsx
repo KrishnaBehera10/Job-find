@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { IoPeople } from "react-icons/io5";
 import { useglobaldata } from "../../Context/MainContext";
 
@@ -9,7 +8,6 @@ function Appliedcard() {
 
   const finetotelJob = job?.filter((data) => data.createdBy.id === recruiterId);
 
-  useEffect(() => {}, []);
   return (
     <div className="flex-1 h-64 border border-gray-200 rounded-2xl p-5 flex items-center justify-between">
       <div>

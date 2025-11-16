@@ -9,17 +9,24 @@ function JobApplied() {
   useEffect(() => {
     const applied = loginUser.appliedJobs;
     setApplied(applied);
-  }, [loginUser]);
+  }, []);
 
-  async function cancleapplied(jobid) {
-    const appliedjob = loginUser.appliedJobs;
-
-    const update = appliedjob.filter((data) => data.id !== jobid);
+  async function cancleapplied(obj) {
+    try {
+      const applicants = obj.applicants.filter((data) => data !== userid);
+      await axios.patch(`/job/${obj.id}`, {
+        applicants: applicants,
+      });
+    } catch (error) {
+      console.log(error);
+    }
 
     try {
+      const update = Applied.filter((data) => data.id !== obj.id);
       const response = await axios.patch(`/user/${userid}`, {
         appliedJobs: update,
       });
+      setApplied(update);
       setloginUser(response.data);
     } catch (error) {
       console.log(error);
@@ -43,7 +50,7 @@ function JobApplied() {
                 </div>
                 <div>
                   <button
-                    onClick={() => cancleapplied(data.id)}
+                    onClick={() => cancleapplied(data)}
                     className="capitalize bg-[var(--btn-color)] text-white py-2 px-5 rounded cursor-pointer"
                   >
                     applied cancle

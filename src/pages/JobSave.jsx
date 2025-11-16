@@ -2,7 +2,7 @@ import Card from "../components/Card";
 import { useglobaldata } from "../Context/MainContext";
 
 function JobSave() {
-  const { savejob, setsavejob } = useglobaldata();
+  const { savejob } = useglobaldata();
 
   return (
     <div className="w-full h-full">
