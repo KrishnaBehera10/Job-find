@@ -1,3 +1,7 @@
+import axios from "../Axios/Axios";
+import { toast } from "react-toastify";
+import { useglobaldata } from "../Context/MainContext";
+
 function DetailsCard({
   id,
   title,
@@ -9,7 +13,42 @@ function DetailsCard({
   description,
   createdBy,
   aboute,
+  applicants,
 }) {
+  const { loginUser, setloginUser } = useglobaldata();
+  const userId = loginUser.id;
+
+  async function appliedJob(obj) {
+    console.log(obj);
+    //applicants
+    try {
+      if (obj.applicants.includes(userId)) {
+        toast.warning("You have already applied to this job!");
+        return;
+      }
+      const updatedApplicants = [...obj.applicants, userId];
+      const response = await axios.patch(`/job/${obj.id}`, {
+        applicants: updatedApplicants,
+      });
+      applied(response.data);
+    } catch (error) {
+      console.error("❌ Error applying job:", error);
+    }
+  }
+
+  async function applied(obj) {
+    //applied Job
+    try {
+      const updateAppliedJob = [...loginUser.appliedJobs, obj];
+      const response = await axios.patch(`/user/${userId}`, {
+        appliedJobs: updateAppliedJob,
+      });
+      setloginUser(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <div className="mt-10">
       <div className="flex flex-col items-start">
@@ -20,7 +59,24 @@ function DetailsCard({
           <p> {type}</p> <p>{salary}</p>
         </div>
         <p className="text-xs">{skills}</p>
-        <button className="bg-[var(--btn-color)] text-white py-3 px-5 cursor-pointer rounded capitalize mt-3">
+        <button
+          onClick={() =>
+            appliedJob({
+              id,
+              title,
+              company,
+              location,
+              salary,
+              skills,
+              type,
+              description,
+              createdBy,
+              aboute,
+              applicants,
+            })
+          }
+          className="bg-[var(--btn-color)] text-white py-3 px-5 cursor-pointer rounded capitalize mt-3"
+        >
           apply now
         </button>
       </div>

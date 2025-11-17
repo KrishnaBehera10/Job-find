@@ -2,6 +2,7 @@ import { MdOutlineBookmarkAdd } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { useglobaldata } from "../Context/MainContext";
 import axios from "../Axios/Axios";
+import { toast } from "react-toastify";
 
 function Card({
   title,
@@ -26,7 +27,7 @@ function Card({
     //applicants
     try {
       if (obj.applicants.includes(userId)) {
-        alert("You have already applied to this job!");
+        toast.warning("You have already applied to this job!");
         return;
       }
       const updatedApplicants = [...obj.applicants, userId];

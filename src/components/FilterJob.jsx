@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { useglobaldata } from "../Context/MainContext";
 
 function FilterJob({ isDetailsPage, isMobile }) {
-  const { job, jobfilter, setjobfilter } = useglobaldata();
+  const { job, setjobfilter } = useglobaldata();
   const { register, handleSubmit, reset } = useForm();
 
   if (isMobile && isDetailsPage) {

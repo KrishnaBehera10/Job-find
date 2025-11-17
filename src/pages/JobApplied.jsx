@@ -60,7 +60,7 @@ function JobApplied() {
             );
           })
         ) : (
-          <p>no data</p>
+          <p className="mt-5 capitalize text-center font-bold">no apply yet</p>
         )}
       </div>
     </div>

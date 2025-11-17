@@ -15,6 +15,7 @@ import { useglobaldata } from "./Context/MainContext";
 import Pagenotfound from "./pages/Pagenotfound";
 import { useEffect } from "react";
 import axios from "./Axios/Axios";
+import ManageJob from "./pages/Admin/ManageJob";
 
 function App() {
   const { loginUser, setjob, savejob, Applied } = useglobaldata();
@@ -66,7 +67,10 @@ function App() {
             <Route path="/singup" element={<Signup />} />
 
             {loginUser.role === "recruiter" && (
-              <Route path="/dashboard" element={<Dashboard />} />
+              <>
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/job_manage" element={<ManageJob />} />
+              </>
             )}
 
             <Route path="*" element={<Pagenotfound />} />

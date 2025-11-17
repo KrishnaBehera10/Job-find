@@ -31,14 +31,17 @@ function Navbar() {
 
       {open && (
         <div className="flex flex-col gap-1">
-          <NavLink to="/job">Job</NavLink>
           {loginUser.role === "jobseeker" ? (
             <div className="flex flex-col gap-1">
+              <NavLink to="/job">Job</NavLink>
               <NavLink to="/jobsave">Saved</NavLink>
               <NavLink to="/applied">Applied</NavLink>
             </div>
           ) : (
-            <NavLink to="/dashboard">Dashboard</NavLink>
+            <>
+              <NavLink to="/job_manage">Manage Job</NavLink>
+              <NavLink to="/dashboard">Dashboard</NavLink>
+            </>
           )}
         </div>
       )}

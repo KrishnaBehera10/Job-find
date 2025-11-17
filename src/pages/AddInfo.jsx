@@ -7,6 +7,7 @@ function AddInfo() {
   const { loginUser, setloginUser } = useglobaldata();
 
   const [inputValue, setInputValue] = useState("");
+  const [textarea, settextarea] = useState("");
   const [items, setItems] = useState([]);
   const [files, setfiles] = useState(null);
 
@@ -30,6 +31,7 @@ function AddInfo() {
   const handleAdd = async () => {
     if (!files) return;
     if (items.length <= 0) return;
+    if (!textarea.trim()) return;
 
     const { id } = loginUser;
 
@@ -37,6 +39,7 @@ function AddInfo() {
       const response = await axios.patch(`/user/${id}`, {
         skills: items,
         resume: files,
+        bio: textarea,
       });
       setloginUser(response.data);
       toast.success(response.statusText);
@@ -106,6 +109,8 @@ function AddInfo() {
           describe yourself
         </label>
         <textarea
+          onChange={(e) => settextarea(e.target.value)}
+          value={textarea}
           placeholder="bio"
           className="border border-gray-300 py-2 rounded-3xl w-full pl-3 h-[300px] resize-none"
         ></textarea>

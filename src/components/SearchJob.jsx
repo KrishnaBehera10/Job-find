@@ -2,7 +2,7 @@ import { CiSearch } from "react-icons/ci";
 import { useglobaldata } from "../Context/MainContext";
 import { useEffect, useState } from "react";
 function SearchJob() {
-  const { job, jobfilter, setjobfilter } = useglobaldata();
+  const { job, setjobfilter } = useglobaldata();
 
   //searching job from job-list
   const [searchJob, setsearchJob] = useState("");
